@@ -1,0 +1,36 @@
+{
+"item": {
+    "itemOptionsData": [
+        {
+          "id": 1,
+          "name": "1 Bag",
+          "numberOfItems": "1",
+          "description": "Normal price",
+          "offer": "",
+          "isPreferred": false
+        },
+        {
+          "id": 2,
+          "name": "3 Bags",
+          "numberOfItems": "2",
+          "description": "Most popular!",
+          "offer": "Save $21.00",
+          "isPreferred": true
+        },
+        {
+          "id": 3,
+          "name": "6 Bags",
+          "numberOfItems": "6",
+          "description": "Biggest savings",
+          "offer": "Save $63.00",
+          "isPreferred": false
+        }
+      ],
+      "itemInfo": {
+        "title": "Optimum",
+        "description": "Wholesome freeze-dried food for dogs",
+        "price": "135.00",
+        "currency": "$"
+      }
+}
+}
