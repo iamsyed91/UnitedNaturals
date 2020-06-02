@@ -7,18 +7,19 @@ import { ItemOption } from './itemoption';
 import { OfferHeader } from './offerheader';
 import styled from '@emotion/styled'
 
-const PreviewImage = styled.div({
-  marginTop: '39px',
-});
-const AdditionalImages = styled.img({
-  width: '68px',
-  border: '1px solid #707070',
-  borderRadius: '2px',
-},
-  props => ({
-    marginLeft: props.isFirst ? '67px' : '14px',
-  }));
-
+const PreviewImage = styled('div')`
+margin-top: 39px;
+& > div {
+  & > img {
+  width: 68px;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  margin-left: 14px;
+  }
+  & img:nth-of-type(1) {
+    margin-left:67px;
+  }
+}`;
 const ProductInfo = styled.div({
   display:'flex',
   justifyContent: 'center',
@@ -184,10 +185,10 @@ class Checkout extends React.Component {
           <PreviewImage>
             <img src={previewImage} alt="Preview Image" />
             <div>
-              <AdditionalImages src={packShot} alt="Additional Product Image" isFirst={true} />
-              <AdditionalImages src={packShot} alt="Additional Product Image" />
-              <AdditionalImages src={packShot} alt="Additional Product Image" />
-              <AdditionalImages src={packShot} alt="Additional Product Image" />
+              <img src={packShot} alt="Additional Product Image" />
+              <img src={packShot} alt="Additional Product Image" />
+              <img src={packShot} alt="Additional Product Image" />
+              <img src={packShot} alt="Additional Product Image" />
             </div>
           </PreviewImage>
           <ProductDescription>
