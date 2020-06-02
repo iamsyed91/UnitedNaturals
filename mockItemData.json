@@ -14,7 +14,7 @@
           "name": "3 Bags",
           "numberOfItems": "2",
           "description": "Most popular!",
-          "offer": "Save $21.00",
+          "offer": "21.00",
           "isPreferred": true
         },
         {
@@ -22,7 +22,7 @@
           "name": "6 Bags",
           "numberOfItems": "6",
           "description": "Biggest savings",
-          "offer": "Save $63.00",
+          "offer": "63.00",
           "isPreferred": false
         }
       ],

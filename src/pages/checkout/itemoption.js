@@ -35,28 +35,31 @@ const ItemOptionStyle = styled.div(
 
 const ItemNameStyle = styled.div(
     {
-        margin: '10px 15px 33px 0px',
+        margin: '15px 33px 0px 0px',
         width: '60px',
         height: '23px',
-        'text-align': 'left',
-        font: 'Bold 18px/30px Muli',
-        'letter-spacing': '0px',
+        textAlign: 'left',
+        fontFamily: 'Muli',
+        fontSize: '18px',
         color: '#2A6035',
+        fontWeight: 700
     },
     props => ({
-        color: props.checked ? '#FFFFFF' : '#2A6035'
+        color: props.checked ? '#FFFFFF' : '#2A6035',
     })
 );
 const ItemDescriptionStyle = styled.div({
     height: '20px',
-    'margin-top': '17px',
-    'text-align': 'left',
-    font: 'Regular 16px/30px Muli',
-    'letter-spacing': '0px',
+    marginTop : '17px',
+    textAlign: 'left',
+    fontFamily: 'Muli',
+    fontSize: '16px',
+    fontWeight: 400,
     color: '#404040'
 },
     props => ({
-        color: props.checked ? '#FFFFFF' : '#404040'
+        color: props.checked ? '#FFFFFF' : '#404040',
+        fontWeight: props.checked ? 700 : 400
     }));
 
 
@@ -66,7 +69,7 @@ export function ItemOption(props) {
             <RadioImage {...props} />
             <ItemNameStyle checked={props.checked}>{props.name}</ItemNameStyle>
             <ItemDescriptionStyle checked={props.checked}>{props.description}</ItemDescriptionStyle>
-            <ItemOfferStyle>{props.offer}</ItemOfferStyle>
+            <ItemOfferStyle>{props.offer ? `Save $${props.offer}` : ''}</ItemOfferStyle>
         </ItemOptionStyle>
     );
 }
