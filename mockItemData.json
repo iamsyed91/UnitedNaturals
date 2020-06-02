@@ -12,7 +12,7 @@
         {
           "id": 2,
           "name": "3 Bags",
-          "numberOfItems": "2",
+          "numberOfItems": "3",
           "description": "Most popular!",
           "offer": "21.00",
           "isPreferred": true
@@ -29,7 +29,7 @@
       "itemInfo": {
         "title": "Optimum",
         "description": "Wholesome freeze-dried food for dogs",
-        "price": "135.00",
+        "price": "45.00",
         "currency": "$"
       }
 }
